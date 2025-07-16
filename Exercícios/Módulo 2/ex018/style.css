@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: old;
+    src: url(fontes/OldLondon.ttf) format('truetype'), url(fonteOlondon_.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to left, red, rgb(75, 23, 23));
+}
+
+h1{
+    font-family: old, Arial, Helvetica;
+    font-size: 4em;
+    text-align: center;
+}
+
+h2{
+    font-family: old, Arial, Helvetica;
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+    font-family: cursive;
+}

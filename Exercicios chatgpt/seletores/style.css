@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1{
+    color: pink;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(255, 180, 192), rgb(248, 255, 205));
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+}
+
+h1#alteracoes {
+    background-color: rgb(226, 145, 183);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}

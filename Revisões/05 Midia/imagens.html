@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Imagem adaptável</h1>
+        <picture>
+            <source media="(max-width: 730px)" srcset="Imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1030px)" srcset="Imagens/foto-m.png" type="image/png">
+            <img src="Imagens/foto-g.png" alt="Imagem padrão">
+        </picture>
+        <p><a href="index.html">Voltar para página pricipal</a></p>
+    </main>
+</body>
+</html>

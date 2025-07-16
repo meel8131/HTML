@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video responsivo</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            background-color: lightgreen;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+        
+        main {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            padding-bottom: 20px;
+            max-width: 700px;
+            min-width: 400px;
+            margin: auto;
+        }
+
+        div.video {
+            background-color: lightblue;
+            margin: 0px -10px; /*AJUSTA O TAMANHO DA DIV*/
+            padding: 20px;
+            padding-bottom: 56%; /*FAZ COM QUE O VIDEO MANTENHA A PROPORÇÃO 16:9 */
+            position: relative;
+        }
+
+        div.video > iframe {
+            position: absolute; 
+            left: 5%; /*AJUSTA A POSIÇÃO*/
+            width: 90%; /*AJUSTA O TAMANHO DO VIDEO*/
+            height: 90%; /*AJUSTA O TAMANHO DO VIDEO*/
+        } 
+
+        /*
+        RELATIVE E ABSOLUTE FUNCIONAM COMO IMÃS
+        - RELATIVE: PLACA METÁLICA
+        - ABSOLUTE: É O ELEMENTO QUE SE GRUDA A PLACA
+
+        O ABSOLUTE SEMPRE VAI SER O ELEMENTO A SER POSICIONADO
+
+        O RELATIVE ARMAZENA ESSE ELEMENTO (ABSOLUTE)
+
+        ABSOLUTE: Quero que esse elemento seja posicionado exatamente onde eu mandar
+
+        RELATIVE: Quero que armazene o elemento que desejo posicionar
+        */
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste</h1>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/ajQw5l2GUMA?si=zxQFeyY6YK7LXx0e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </main>
+</body>
+</html>
